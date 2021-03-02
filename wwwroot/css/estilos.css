@@ -1,0 +1,65 @@
+
+#flex-horizontal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+#encabezado{
+    color: rgb(64, 161, 135) ;
+    font: 15px Georgia, serif;
+    text-align: center;
+    padding: 0px 100px;
+}
+
+#foto{
+    text-align: center;
+    padding-left: 20px;
+}
+body{
+    background-color: rgb(228, 228, 228);
+    font-family: Helvetica, Sans-Serif;
+}
+h2{
+    padding: 20px;
+}
+p{
+    padding: 10px 60px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+ul{
+    padding: 10px 100px;
+}
+dl{
+    padding: 10px 80px;
+}
+dt{
+    text-align: center;
+}
+dd{
+    padding: 20px 0px 40px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+select{
+    padding: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
