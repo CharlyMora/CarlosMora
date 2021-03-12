@@ -8,8 +8,8 @@
     padding: 10px;
 }
 #encabezado{
-    color: rgb(64, 161, 135) ;
-    font: 15px Georgia, serif;
+    color: rgb(94, 150, 147) ;
+
     text-align: center;
     padding: 0px 100px;
 }
@@ -20,7 +20,7 @@
 }
 body{
     background-color: rgb(228, 228, 228);
-    font-family: Helvetica, Sans-Serif;
+
 }
 h2{
     padding: 20px;
