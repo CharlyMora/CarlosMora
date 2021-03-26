@@ -1,9 +1,11 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+
 body{
   background: grey;
   text-align: center;
+  font-family: 'DM Mono', monospace;
 }
 header{
   text-align: start;
@@ -31,7 +33,11 @@ header .container{
 
 /* Provide sufficient contrast against white background */
 a {
-  color: #0366d6;
+  color: #53ffd7;
+}
+h1{
+  font-size: 4rem;
+  font-family: 'Share Tech Mono', monospace;
 }
 
 .btn-primary {
