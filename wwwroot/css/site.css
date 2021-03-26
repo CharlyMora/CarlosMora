@@ -9,7 +9,13 @@ header{
   text-align: start;
 }
 header .container{
+  display: grid;
+  grid-template-columns: minmax(50px, 25%) 1fr;
+}
+.navbarElements{
   display: flex;
+  justify-items:end;
+  list-style-type: none;
 }
 a.navbar-brand {
   white-space: normal;
