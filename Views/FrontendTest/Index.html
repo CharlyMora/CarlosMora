@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CarlosMora</title>
+        <link rel="stylesheet" href="../../wwwroot/css/site.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    </head>
+<body>
+
+    <header>
+        <nav class="mainNavBar">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CarlosMora</a>
+    
+                <ul class="navbarElements">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="HojaDeVida">Hoja de vida</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="CurriculumVitae">CV</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </nav>
+    </header>
+    <!--Start main area -->
+    <div class="text-center">
+        <h1>Carlos Mora</h1>
+        <h2>Desarrollador web</h2>
+        <p>Convenientemente minimalista.</p>
+    </div>
+    <!-- End main area -->
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - CarlosMora - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+</body>
+</html>
