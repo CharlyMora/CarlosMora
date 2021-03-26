@@ -3,9 +3,10 @@ for details on configuring this project to bundle and minify static web assets. 
 
 
 body{
-  background: grey;
+  background: #172944;
   text-align: center;
   font-family: 'DM Mono', monospace;
+  color: #dfdfdf;
 }
 header{
   text-align: start;
@@ -36,7 +37,13 @@ a {
   color: #53ffd7;
 }
 h1{
+  margin-bottom: 1rem;
   font-size: 4rem;
+  font-family: 'Share Tech Mono', monospace;
+}
+h2{
+  margin: 1rem;
+  font-size: 2rem;
   font-family: 'Share Tech Mono', monospace;
 }
 
