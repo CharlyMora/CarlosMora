@@ -3,7 +3,10 @@ for details on configuring this project to bundle and minify static web assets. 
 
 
 body{
-  background: #172944;
+  background: rgb(4,4,42);
+
+  background: radial-gradient(circle, 
+  rgba(72,62,244,1) 0%, rgba(4,4,42,1) 5%, rgba(72,62,244,1) 10%,rgba(4,4,42,1) 15%, rgba(72,62,244,1) 40%,rgba(4,4,42,1) 50%, rgba(72,62,244,1) 70%,rgba(4,4,42,1) 75%, rgba(72,62,244,1) 95%,rgba(4,4,42,1) 96%, rgba(72,62,244,1) 100%);
   text-align: center;
   font-family: 'DM Mono', monospace;
   color: #dfdfdf;
@@ -40,6 +43,11 @@ h1{
   margin-bottom: 1rem;
   font-size: 4rem;
   font-family: 'Share Tech Mono', monospace;
+
+  /* border-radius: 52px;
+  background: #0a093b;
+  box-shadow:  30px 60px 0px #040418,
+              30px -50px 0px #100e5e; */
 }
 h2{
   margin: 1rem;
