@@ -5,35 +5,26 @@ for details on configuring this project to bundle and minify static web assets. 
 body{
   background: rgb(4,4,42);
 
-  background: radial-gradient(circle, 
-  rgba(72,62,244,1) 0%, rgba(4,4,42,1) 5%, rgba(72,62,244,1) 10%,rgba(4,4,42,1) 15%, rgba(72,62,244,1) 40%,rgba(4,4,42,1) 50%, rgba(72,62,244,1) 70%,rgba(4,4,42,1) 75%, rgba(72,62,244,1) 95%,rgba(4,4,42,1) 96%, rgba(72,62,244,1) 100%);
+  
   text-align: center;
   font-family: 'DM Mono', monospace;
   color: #dfdfdf;
+
+  
+  background: linear-gradient(180deg, rgba(4,4,42,1) 45%, rgba(26,179,210,1) 90%,rgba(4,4,42,1) 100%);
+
+  /* background: radial-gradient(circle, 
+  rgba(72,62,244,1) 0%, rgba(4,4,42,1) 5%, rgba(72,62,244,1) 10%,rgba(4,4,42,1) 15%, rgba(72,62,244,1) 40%,rgba(4,4,42,1) 50%, rgba(72,62,244,1) 70%,rgba(4,4,42,1) 75%, rgba(72,62,244,1) 95%,rgba(4,4,42,1) 96%, rgba(72,62,244,1) 100%); */
 }
 header{
   text-align: start;
 }
-header .container{
-  display: grid;
-  grid-template-columns: minmax(50px, 25%) 1fr;
-}
+
 .navbarElements{
   display: flex;
   justify-content: space-around;
   list-style-type: none;
 }
-.navbar-brand{
-  display: grid;
-  place-items: center;
-
-
-}
-/* a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
-} */
 
 /* Provide sufficient contrast against white background */
 a {
@@ -44,10 +35,6 @@ h1{
   font-size: 4rem;
   font-family: 'Share Tech Mono', monospace;
 
-  /* border-radius: 52px;
-  background: #0a093b;
-  box-shadow:  30px 60px 0px #040418,
-              30px -50px 0px #100e5e; */
 }
 h2{
   margin: 1rem;
@@ -79,10 +66,10 @@ html {
 }
 
 .border-top {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #53ffd7;
 }
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #53ffd7;
 }
 
 .box-shadow {
@@ -112,7 +99,4 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
-header{
-  font-size: inherit;
-  font-family: inherit;
-}
+
