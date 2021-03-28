@@ -23,7 +23,7 @@ namespace CarlosMora.Controllers
             return View();
         }
 
-        public IActionResult CurriculumVitae()
+        public IActionResult Blog()
         {
             return View();
         }
@@ -33,7 +33,15 @@ namespace CarlosMora.Controllers
             return View();
         }
 
-        
+        public IActionResult InspirationPages()
+        {
+            return View();
+        }
+
+        public IActionResult MyWork()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
