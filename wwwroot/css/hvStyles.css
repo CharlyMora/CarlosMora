@@ -1,0 +1,52 @@
+#encabezado{
+    padding: 0px 100px;
+}
+#areas{
+    list-style-type: none;
+    text-align: left;
+    text-indent: -2rem;
+}
+#areas li{
+    margin-bottom: 0.2rem;
+}
+
+#hvSuperior{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+#downloadHV{
+    display: flex;
+    justify-content:space-around ;
+}
+
+#hvLink{
+    /* color: black; */
+    font-size: 1.3rem;
+    font-weight: 500000;
+}
+
+
+
+
+h2{
+    padding: 20px;
+}
+p{
+    padding: 10px 60px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+ul{
+    padding: 10px 100px;
+}
+dl{
+    padding: 10px 80px;
+}
+dt{
+    text-align: center;
+}
+dd{
+    padding: 20px 0px 40px;
+    text-align: justify;
+    text-justify: inter-word;
+}
