@@ -1,8 +1,0 @@
-﻿
-body{
-  background: rgb(4,4,42);
-  color: #dfdfdf;
-  
-  background: radial-gradient(circle, 
-  rgba(72,62,244,1) 0%, rgba(4,4,42,1) 5%, rgba(72,62,244,1) 10%,rgba(4,4,42,1) 15%, rgba(72,62,244,1) 40%,rgba(4,4,42,1) 50%, rgba(72,62,244,1) 70%,rgba(4,4,42,1) 75%, rgba(72,62,244,1) 95%,rgba(4,4,42,1) 96%, rgba(72,62,244,1) 100%);
-}

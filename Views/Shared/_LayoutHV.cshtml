@@ -4,11 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - CarlosMora</title>
+    <link rel="stylesheet" href="~/css/hv.css" />
     <link rel="stylesheet" href="~/css/site.css" />
-    @* <link rel="stylesheet" href="~/css/estilos.css" /> *@
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <partial name="NavigationBar"/>
@@ -19,7 +19,7 @@
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
+        <div class="footerContainer">
             &copy; 2021 - CarlosMora - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
@@ -27,5 +27,9 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    <script id="__bs_script__">//<![CDATA[
+        document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.14'><\/script>".replace("HOST", location.hostname));
+        //]]>
+    </script>
 </body>
 </html>

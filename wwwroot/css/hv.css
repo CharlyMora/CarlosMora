@@ -1,0 +1,45 @@
+body{
+    margin:0px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hvTable{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+
+
+tr:nth-child(odd) {
+    background-color: rgb(17, 17, 70);
+}
+
+.dlgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+p , dd{
+    text-align: justify;
+}
+
+dt{
+    text-align: start;
+    margin: 10px 0px;
+}
+
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.spacer{
+    margin: 50px;
+}
+
+.encabezado{
+    margin: 30px;
+}
