@@ -1,16 +1,16 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
-    Layout= "_LayoutHV";
+    Layout = "_LayoutHV";
 }
 <!---->
 <style>
-    <link rel="stylesheet" href="~/css/estilos.css" />
+    <link rel="stylesheet"href="~/css/estilos.css"/>
 </style>
- <!--Encabezado-->
- <div id="encabezado">
-            <h3 class="encabezado">HOJA DE VIDA</h3>
-            <h1 class="encabezado">CARLOS ANDRES MORA ROCHA</h1>
-        </div>
+<!--Encabezado-->
+<div id="encabezado">
+    <h3 class="encabezado">HOJA DE VIDA</h3>
+    <h1 class="encabezado">CARLOS ANDRES MORA ROCHA</h1>
+</div>
 <div class="banner border-bottom border-top">
     <div id="flex-horizontal">
         <h2><strong>Sobre Mi</strong></h2>
@@ -18,44 +18,51 @@
             <img src="https://i.imgur.com/mdZOHYr.jpg" alt="foto formal de carlos mora" width="100" height="128">
         </div>
     </div>
-    
+
     <!--Perfil profesional-->
 
     <div>
-        
-        <p>Tengo experiencia de más de un año en programación en .Net, C#, HTML, CSS con estilo MVC, bases de datos MySQL y SQL, manejo básico de Java, JavaScript, typescript y Angular y manejo de control de versiones haciendo uso de git y github, he construido y hecho despliegues de paginas web haciendo uso de Azure con conexiones a SQL  y github para mantener una integración continua, adicionalmente he realizado proyectos para administración de personal haciendo uso de macros para acelerar el ritmo de trabajo de estas áreas, esto en parte gracias a entrenamientos en manejo de área de workforce, complementados con conocimientos para puestos de aseguramiento de calidad adquiridos con el fin de realizar análisis de datos que permitan el entendimiento de causas raíz y la puesta en marcha de planes de acción que logren la mejora de indicadores en el área.</a>
+        <p>Tengo experiencia de más de un año en programación en .Net, C#, HTML, CSS con estilo MVC, bases de datos
+            MySQL y SQL, manejo básico de Java, JavaScript, typescript y Angular y manejo de control de versiones
+            haciendo uso de git y github, he construido y hecho despliegues de paginas web haciendo uso de Azure con
+            conexiones a SQL y github para mantener una integración continua, adicionalmente he realizado proyectos para
+            administración de personal haciendo uso de macros para acelerar el ritmo de trabajo de estas áreas, esto en
+            parte gracias a entrenamientos en manejo de área de workforce, complementados con conocimientos para puestos
+            de aseguramiento de calidad adquiridos con el fin de realizar análisis de datos que permitan el
+            entendimiento de causas raíz y la puesta en marcha de planes de acción que logren la mejora de indicadores
+            en el área.</a>
     </div>
 </div>
-    
 
-    <!--Formacion academica-->
 
-    <div class="spacer"> 
-        <h2><strong>Formacion</strong></h2>
-        <table class="hvTable">
-            <tr>
-                <th>Centro de formacion</th>
-                <th>Titulo</th>
-                <th>Estado</th>
-            </tr>
+<!--Formacion academica-->
 
-            <tr>
-                <td>Politecnico Internacional</td>
-                <td>Tecnología en desarrollo de software y aplicativos móviles </td>
-                <td>En curso</td>
-            </tr>
-            <tr>
-                <td>Fundacion universidad de america</td>
-                <td>Ingeniero Quimico </td>
-                <td>Finalizado 2016</td>
-            </tr>
-        </table>
-    </div>
-    <!--Experiencia laboral-->
+<div class="spacer">
+    <h2><strong>Formacion</strong></h2>
+    <table class="hvTable">
+        <tr>
+            <th>Centro de formacion</th>
+            <th>Titulo</th>
+            <th>Estado</th>
+        </tr>
 
-    <div id="experiencia">
-        <h2><strong>Experiencia laboral</strong></h2>
-        <dl class="dlgrid">
+        <tr>
+            <td>Politecnico Internacional</td>
+            <td>Tecnología en desarrollo de software y aplicativos móviles </td>
+            <td>En curso</td>
+        </tr>
+        <tr>
+            <td>Fundacion universidad de america</td>
+            <td>Ingeniero Quimico </td>
+            <td>Finalizado 2016</td>
+        </tr>
+    </table>
+</div>
+<!--Experiencia laboral-->
+
+<div id="experiencia">
+    <h2><strong>Experiencia laboral</strong></h2>
+    <dl class="dlgrid">
         <div>
             <dt class="dthead"><u>Programador independiente </u></dt>
             <dt class="dtdate">Octubre 2019 - Fecha actual</dt>
@@ -100,7 +107,8 @@
             <dt class="dthead"><u>Tesis de grado </u></dt>
             <dt class="dtdate">Junio 2014 – Abril 2016</dt>
             <dd>
-                <i> Supervisores: Elizabeth Torres <br> Correo: elizabeth.torres@profesores.uamerica.edu.co; <br> Sandra Molina Tel: 300 736 8173 </i><br>
+                <i> Supervisores: Elizabeth Torres <br> Correo: elizabeth.torres@profesores.uamerica.edu.co; <br> Sandra
+                    Molina Tel: 300 736 8173 </i><br>
                 Desarrollo realizado en Tecnoparque SENA, Nodo Bogotá con el tema: Modificación de un fotobiorreactor de
                 placa plana para la producción de alga Chlorella vulgaris a menores costos mediante cambios en el
                 sistema de aireamiento. Durante el proceso se realizaron modificaciones a un diseño previo de
@@ -109,15 +117,15 @@
         </div>
 
     </dl>
-    </div>
+</div>
 
-    @* <div id="flex-horizontal">
-        <h2>Ir a otras redes de contacto</h2>
-        <select onchange="location = this.value;">
-            <option></option>
-            <option value="https://www.linkedin.com/">LinkedIn</option>
-            <option value="https://www.facebook.com/">Facebook</option>
-            <option value="https://www.instagram.com/">Instagram</option>
-            <option value="https://twitter.com/">Twitter</option>
-        </select>
+@* <div id="flex-horizontal">
+    <h2>Ir a otras redes de contacto</h2>
+    <select onchange="location = this.value;">
+    <option></option>
+    <option value="https://www.linkedin.com/">LinkedIn</option>
+    <option value="https://www.facebook.com/">Facebook</option>
+    <option value="https://www.instagram.com/">Instagram</option>
+    <option value="https://twitter.com/">Twitter</option>
+    </select>
     </div> *@

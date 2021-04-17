@@ -1,5 +1,4 @@
 body{
-    margin:0px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -34,6 +33,9 @@ dt{
 .banner{
     display: grid;
     grid-template-columns: 1fr 2fr;
+    padding: 30px;
+    width: 90%;
+    margin:auto;
 }
 
 .spacer{
