@@ -28,7 +28,7 @@ namespace CarlosMora.Controllers
             return View();
         }
 
-        public IActionResult HojaDeVida()
+        public IActionResult Curriculum()
         {
             return View();
         }
