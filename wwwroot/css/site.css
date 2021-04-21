@@ -1,12 +1,24 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
+html {
+  position: relative;
+  min-height: 100%;
+  font-size: 14px;
+}
+
 body{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   background: rgb(4,4,42);
   text-align: center;
   font-family: 'DM Mono', monospace;
   color: #dfdfdf;
   background: linear-gradient(180deg, rgba(4,4,42,1) 80%, rgb(18, 92, 107) );
+  margin-bottom: 110px;
 }
+
+
 
 header{
   text-align: start;
@@ -64,11 +76,6 @@ h2{
   border-color: #1861ac;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  font-size: 14px;
-}
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -93,19 +100,11 @@ button.accept-policy {
 
 /* Sticky footer styles
 -------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
 
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 110px;
-}
 .footer {
   position: absolute;
   bottom: 0;
-  width: 98%;
+  width: 90%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }

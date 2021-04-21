@@ -1,8 +1,4 @@
-body{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .hvTable{
     margin-left: auto;
     margin-right: auto;
@@ -45,11 +41,3 @@ dt{
 .encabezado{
     margin: 30px;
 }
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 90%;
-    white-space: nowrap;
-    line-height: 60px; /* Vertically center the text there */
-  }
