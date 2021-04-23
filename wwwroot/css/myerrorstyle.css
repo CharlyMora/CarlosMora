@@ -1,19 +1,49 @@
-﻿body{
+﻿body {
   color: #dfdfdf;
-  display: grid;
-  background: radial-gradient(circle, 
-  rgba(72,62,244,1) 0%, rgba(4,4,42,1) 5%, rgba(72,62,244,1) 10%,rgba(4,4,42,1) 15%, rgba(72,62,244,1) 40%,rgba(4,4,42,1) 50%, rgba(72,62,244,1) 70%,rgba(4,4,42,1) 75%, rgba(72,62,244,1) 95%,rgba(4,4,42,1) 96%, rgba(72,62,244,1) 100%);
-  place-items: center/center;
+  background: radial-gradient(
+    circle,
+    rgb(18, 92, 107) 0%,
+    rgba(4, 4, 42, 1) 5%,
+    rgb(18, 92, 107) 10%,
+    rgba(4, 4, 42, 1) 15%,
+    rgb(18, 92, 107) 40%,
+    rgba(4, 4, 42, 1) 50%,
+    rgb(18, 92, 107) 70%,
+    rgba(4, 4, 42, 1) 75%,
+    rgb(18, 92, 107) 95%,
+    rgba(4, 4, 42, 1) 96%,
+    rgb(18, 92, 107) 100%
+  );
+
+  /* background: radial-gradient(
+    circle,
+    rgba(72, 62, 244, 1) 0%,
+    rgba(4, 4, 42, 1) 5%,
+    rgba(72, 62, 244, 1) 10%,
+    rgba(4, 4, 42, 1) 15%,
+    rgba(72, 62, 244, 1) 40%,
+    rgba(4, 4, 42, 1) 50%,
+    rgba(72, 62, 244, 1) 70%,
+    rgba(4, 4, 42, 1) 75%,
+    rgba(72, 62, 244, 1) 95%,
+    rgba(4, 4, 42, 1) 96%,
+    rgba(72, 62, 244, 1) 100%
+  ); */
+
   margin-bottom: 0;
 
-  position:fixed;
-    top:0px;
-    bottom:0px;
-    left:0px;
-    right:0px;
-  
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
 }
-
-.notFound{
-  
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.notFound {
+  height: auto;
+  padding-bottom: 5rem;
 }

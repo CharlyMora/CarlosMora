@@ -102,7 +102,11 @@ button.accept-policy {
 
 /* Sticky footer styles
 -------------------------------------------------- */
-
+.bottomLink{
+  position: absolute;
+  bottom: 110px;
+  right: 0;
+}
 .footer {
   position: absolute;
   bottom: 0;
