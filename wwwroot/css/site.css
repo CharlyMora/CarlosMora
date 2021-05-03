@@ -5,7 +5,9 @@ html {
   min-height: 100%;
   font-size: 14px;
 }
-
+.movementCont{
+  height: 10rem;
+}
 body{
   width: 90%;
   margin-left: auto;
@@ -16,6 +18,22 @@ body{
   color: #dfdfdf;
   background: linear-gradient(180deg, rgba(4,4,42,1) 80%, rgb(18, 92, 107) );
   margin-bottom: 110px;
+}
+
+.object {
+  animation: MoveUpDown 2s linear infinite;
+  position:relative;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 18px;
+  }
 }
 
 p{
@@ -103,8 +121,10 @@ button.accept-policy {
 /* Sticky footer styles
 -------------------------------------------------- */
 .bottomLink{
-  position: absolute;
+  /* position: absolute; */
   bottom: 110px;
+  /* margin-top: 3rem; */
+  padding-top: 3rem;
   right: 0;
 }
 .footer {
