@@ -15,15 +15,19 @@ namespace CarlosMora.Models
     public class ApiServices
     {
         static HttpClient client = new HttpClient();
+        string myUrl = "https://thatcopy.pw/catapi/rest/";
          static async Task<string> GetImgAsync(string path)
         {
-            string product = "";
+            IEnumerable<string> product= new List<string>();
             HttpResponseMessage response = await client.GetAsync(path);
             if (response.IsSuccessStatusCode)
             {
-                product = await response.Content.ReadAsAsync<Product>();
+                // product = await response.Content.Headers.GetValues("u");
+                
+                                                        // .Find(x => x.Name == "userId")
+                                                        // .Value.ToString();
             }
-            return product;
+            return product.FirstOrDefault();
         }
     }
 }
