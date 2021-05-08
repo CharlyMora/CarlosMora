@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using CarlosMora.Models;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
 
 namespace CarlosMora.Controllers
 {
@@ -13,6 +16,7 @@ namespace CarlosMora.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
+        
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -25,6 +29,7 @@ namespace CarlosMora.Controllers
 
         public IActionResult Blog()
         {
+
             return View();
         }
 
@@ -53,5 +58,7 @@ namespace CarlosMora.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+       
     }
 }
