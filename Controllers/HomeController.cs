@@ -16,6 +16,10 @@ namespace CarlosMora.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
+        private static readonly HttpClient myHttpClient = new HttpClient();
+
+        static string myString="nooo";
+
         
         public HomeController(ILogger<HomeController> logger)
         {
@@ -27,10 +31,16 @@ namespace CarlosMora.Controllers
             return View();
         }
 
-        public IActionResult Blog()
-        {
+        // public IActionResult Blog()
+        // {
 
-            return View();
+        //     return View();
+        // }
+
+        public async Task<ActionResult> Blog(){
+            
+            var myRepos = await ApiServices.ProcessRepositories();
+            return View(myRepos);
         }
 
         public IActionResult Curriculum()
@@ -59,6 +69,5 @@ namespace CarlosMora.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-       
     }
 }
