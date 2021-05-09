@@ -36,6 +36,7 @@ namespace CarlosMora.Controllers
         public async Task<ActionResult> Blog(){
             
             var myRepos = await ApiServices.ProcessRepositories2();
+            
             return View(myRepos);
         }
 
@@ -44,8 +45,9 @@ namespace CarlosMora.Controllers
             return View();
         }
 
-        public IActionResult InspirationPages()
+        public async Task<ActionResult> InspirationPages()
         {
+            ViewBag.bird= await ApiServices.ProcessRepositories3();
             return View();
         }
 

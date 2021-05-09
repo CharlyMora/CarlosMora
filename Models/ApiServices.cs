@@ -37,16 +37,27 @@ namespace CarlosMora.Models
             // end of replacement
         }
 
-        static string path = "https://randomfox.ca/floof/";
         public static async Task<fox> ProcessRepositories2()
         {
             fox myFox = null;
-            HttpResponseMessage response = await myHttpClient.GetAsync(path);
+            HttpResponseMessage response = await myHttpClient.GetAsync("https://randomfox.ca/floof/");
             if (response.IsSuccessStatusCode)
             {
                 myFox = await response.Content.ReadAsAsync<fox>();
             }
             return myFox;
+        }
+
+        public static async Task<string> ProcessRepositories3()
+        {
+            string[] myLink = null;
+            HttpResponseMessage response = await myHttpClient.GetAsync("http://shibe.online/api/birds");
+            if (response.IsSuccessStatusCode)
+            {
+                myLink = await response.Content.ReadAsAsync<string[]>();
+
+            }
+            return myLink.First();
         }
     }
 }
