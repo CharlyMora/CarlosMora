@@ -36,5 +36,17 @@ namespace CarlosMora.Models
             return repositories;
             // end of replacement
         }
+
+        static string path = "https://randomfox.ca/floof/";
+        public static async Task<fox> ProcessRepositories2()
+        {
+            fox myFox = null;
+            HttpResponseMessage response = await myHttpClient.GetAsync(path);
+            if (response.IsSuccessStatusCode)
+            {
+                myFox = await response.Content.ReadAsAsync<fox>();
+            }
+            return myFox;
+        }
     }
 }

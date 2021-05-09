@@ -16,10 +16,6 @@ namespace CarlosMora.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        private static readonly HttpClient myHttpClient = new HttpClient();
-
-        static string myString="nooo";
-
         
         public HomeController(ILogger<HomeController> logger)
         {
@@ -39,7 +35,7 @@ namespace CarlosMora.Controllers
 
         public async Task<ActionResult> Blog(){
             
-            var myRepos = await ApiServices.ProcessRepositories();
+            var myRepos = await ApiServices.ProcessRepositories2();
             return View(myRepos);
         }
 
