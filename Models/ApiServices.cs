@@ -31,9 +31,12 @@ namespace CarlosMora.Models
             //var msg = await stringTask;
             // replaced with
             var streamTask = myHttpClient.GetStreamAsync("https://api.github.com/orgs/dotnet/repos");
+            
+            
             var repositories = await JsonSerializer.DeserializeAsync<List<repo>>(await streamTask);
-
+            
             return repositories;
+
             // end of replacement
         }
 
