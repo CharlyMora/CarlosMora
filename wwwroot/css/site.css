@@ -20,6 +20,10 @@ body{
   margin-bottom: 110px;
 }
 
+.haveImg{
+  max-width: 80vw;
+}
+
 .object {
   animation: MoveUpDown 2s linear infinite;
   position:relative;

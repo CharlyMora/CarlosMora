@@ -16,7 +16,7 @@ namespace CarlosMora.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        
+
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -33,13 +33,18 @@ namespace CarlosMora.Controllers
         //     return View();
         // }
 
-        public async Task<ActionResult> Blog(){
-            
+        public async Task<ActionResult> Blog()
+        {
+
             var myRepos = await ApiServices.ProcessRepositories2();
-            
+
             return View(myRepos);
         }
 
+        public IActionResult BlogDev()
+        {
+            return View();
+        }
         public IActionResult Curriculum()
         {
             return View();
@@ -47,7 +52,7 @@ namespace CarlosMora.Controllers
 
         public async Task<ActionResult> InspirationPages()
         {
-            ViewBag.bird= await ApiServices.ProcessRepositories3();
+            ViewBag.bird = await ApiServices.ProcessRepositories3();
             return View();
         }
 
