@@ -1,4 +1,4 @@
-﻿@model CarlosMora.Models.InspirationsList
+﻿@model string[,];
 @{
     ViewData["Title"] = "Paginas para inspirar";
 }
@@ -22,13 +22,13 @@
         or check the development so far
     </p>
 <div class="card-container">
-    @for (int i = 0; i < Model.myArrayOfPages.Length/4; i++)
+    @for (int i = 0; i < Model.Length/4; i++)
     {
         <div class="card" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title">@Model.myArrayOfPages[i,0]</h5>
-                <p class="card-text">@Model.myArrayOfPages[i,1]</p>
-                <a href="@Model.myArrayOfPages[i,2]" class="card-link" target="_blank">@Model.myArrayOfPages[i,3]</a>
+                <h5 class="card-title">@Model[i,0]</h5>
+                <p class="card-text">@Model[i,1]</p>
+                <a href="@Model[i,2]" class="card-link" target="_blank">@Model[i,3]</a>
             </div>
         </div>
     }
