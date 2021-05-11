@@ -53,7 +53,8 @@ namespace CarlosMora.Controllers
         public async Task<ActionResult> InspirationPages()
         {
             ViewBag.bird = await ApiServices.ProcessRepositories3();
-            return View();
+            var myPages = new InspirationsList();
+            return View(myPages);
         }
 
         public IActionResult MyWork()

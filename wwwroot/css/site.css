@@ -24,6 +24,23 @@ body{
   max-width: 80vw;
 }
 
+.card{
+  border-style: double;
+  border-width: 3px;
+  border-color: #53ffd7;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border-radius: 25px;
+  margin: 2rem;
+  min-width: 18rem;
+}
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .object {
   animation: MoveUpDown 2s linear infinite;
   position:relative;

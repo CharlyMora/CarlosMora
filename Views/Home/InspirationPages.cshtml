@@ -1,11 +1,12 @@
-﻿@{
+﻿@model CarlosMora.Models.InspirationsList
+@{
     ViewData["Title"] = "Paginas para inspirar";
 }
 
 <div class="text-center">
-        <h1>Paginas para inspirar</h1>
-        <partial name = "inconstruction"/>
-        <p>
+    <h1>Paginas para inspirar</h1>
+    <partial name="inconstruction" />
+    <p>
         have a random bird pic instead
     </p>
     <img class="haveImg" src=@ViewBag.bird alt="">
@@ -16,6 +17,20 @@
     <p>
         link to this fox pic: @ViewBag.bird
     </p>
-    </div>
+</div>
 
-    
+<div class="card-container">
+    @for (int i = 0; i < Model.myArrayOfPages.Length/3; i++)
+    {
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">@Model.myArrayOfPages[1,1]</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Model length= @Model.myArrayOfPages.Length/3</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                    content.</p>
+                <a href="#" class="card-link">Card link</a>
+            </div>
+        </div>
+    }
+
+</div>
