@@ -12,23 +12,23 @@
     <img class="haveImg" src=@ViewBag.bird alt="">
 
     <p>
-        courtesy of <a href="http://shibe.online">http://shibe.online</a>
+        courtesy of <a href="http://shibe.online" target="_blank">http://shibe.online</a>
     </p>
     <p>
-        link to this fox pic: @ViewBag.bird
+        link to this bird pic: @ViewBag.bird
     </p>
 </div>
-
+<p>
+        or check the development so far
+    </p>
 <div class="card-container">
-    @for (int i = 0; i < Model.myArrayOfPages.Length/3; i++)
+    @for (int i = 0; i < Model.myArrayOfPages.Length/4; i++)
     {
         <div class="card" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title">@Model.myArrayOfPages[1,1]</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Model length= @Model.myArrayOfPages.Length/3</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                    content.</p>
-                <a href="#" class="card-link">Card link</a>
+                <h5 class="card-title">@Model.myArrayOfPages[i,0]</h5>
+                <p class="card-text">@Model.myArrayOfPages[i,1]</p>
+                <a href="@Model.myArrayOfPages[i,2]" class="card-link" target="_blank">@Model.myArrayOfPages[i,3]</a>
             </div>
         </div>
     }
