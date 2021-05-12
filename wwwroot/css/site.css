@@ -28,9 +28,7 @@ body{
   border-style: double;
   border-width: 3px;
   border-color: #53ffd7;
-  padding-bottom: 1rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding: 1rem;
   border-radius: 25px;
   margin: 2rem;
   min-width: 18rem;
@@ -39,6 +37,13 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+.blog-card{
+  background: linear-gradient(180deg, rgb(18, 92, 107) 80%, rgba(4,4,42,1) );
+  /* color: rgba(4,4,42,1); */
+  border-radius: 10px;
+  min-width: 25rem;
 }
 
 .object {

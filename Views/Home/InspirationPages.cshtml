@@ -19,14 +19,16 @@
     </p>
 </div>
 <p>
-        or check the development so far
-    </p>
+    or check the development so far
+</p>
 <div class="card-container">
-    @for (int i = 0; i < Model.Length/4; i++)
+    @* GetLength(0) gives the lenght of the array on the first dimension *@
+    @for (int i = 0; i < Model.GetLength(0); i++)
     {
         <div class="card" style="width: 18rem;">
+            <div class="card-header">@Model[i,0]</div>
             <div class="card-body">
-                <h5 class="card-title">@Model[i,0]</h5>
+                
                 <p class="card-text">@Model[i,1]</p>
                 <a href="@Model[i,2]" class="card-link" target="_blank">@Model[i,3]</a>
             </div>
