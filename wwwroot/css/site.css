@@ -45,9 +45,6 @@ body{
   border-radius: 10px;
   min-width: 25rem;
 }
-.blogEntrie{
-  text-align: left;
-}
 
 .object {
   animation: MoveUpDown 2s linear infinite;

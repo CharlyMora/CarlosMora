@@ -27,7 +27,7 @@ namespace CarlosMora.Controllers
             return View();
         }
 
-        public IActionResult Entrie(string id)
+        public IActionResult Entries(string id)
         {
             
             return View(id);
