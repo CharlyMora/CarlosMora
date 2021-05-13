@@ -27,24 +27,7 @@ namespace CarlosMora.Controllers
             return View();
         }
 
-        // public IActionResult Blog()
-        // {
-
-        //     return View();
-        // }
-
-        public async Task<ActionResult> Blog()
-        {
-
-            var myRepos = await ApiServices.ProcessRepositories2();
-
-            return View(myRepos);
-        }
-
-        public IActionResult BlogDev()
-        {
-            return View();
-        }
+    
         public IActionResult Curriculum()
         {
             return View();
