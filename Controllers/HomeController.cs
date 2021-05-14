@@ -48,7 +48,7 @@ namespace CarlosMora.Controllers
 
         public IActionResult MyNotFound()
         {
-            return View();
+            return View("MyNotFound");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
