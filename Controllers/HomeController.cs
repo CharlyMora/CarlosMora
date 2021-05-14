@@ -35,8 +35,14 @@ namespace CarlosMora.Controllers
 
         public async Task<ActionResult> InspirationPages()
         {
-            ViewBag.bird = await ApiServices.ProcessRepositories3();
-            //var myPages = new InspirationsList();
+            var birdLink = await ApiServices.BirdsApi();
+            if (!birdLink.StartsWith("http"))
+            {   ViewBag.birdLink= birdLink;
+                ViewBag.birdtext= "no link for this one";
+            }else{
+                ViewBag.birdLink =ViewBag.birdtext = birdLink;
+            }
+            
             var myPages = new InspirationsList().myArrayOfPages;
             return View(myPages);
         }

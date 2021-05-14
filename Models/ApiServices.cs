@@ -40,27 +40,36 @@ namespace CarlosMora.Models
             // end of replacement
         }
 
-        public static async Task<fox> ProcessRepositories2()
+        public static async Task<fox> FoxApi()
         {
             fox myFox = null;
             HttpResponseMessage response = await myHttpClient.GetAsync("https://randomfox.ca/floof/");
             if (response.IsSuccessStatusCode)
+            //if(false) //for test purposes
             {
+                
                 myFox = await response.Content.ReadAsAsync<fox>();
+                myFox.LinkText= myFox.image;
+            }else{
+                myFox = new fox{image="/imgs/dog.jpg", LinkText= "no link for this one"};
             }
             return myFox;
         }
 
-        public static async Task<string> ProcessRepositories3()
+        public static async Task<string> BirdsApi()
         {
-            string[] myLink = null;
+            string[] myArray = null;
+            string myLink=null;
             HttpResponseMessage response = await myHttpClient.GetAsync("http://shibe.online/api/birds");
             if (response.IsSuccessStatusCode)
+            //if(false) //for test purposes
             {
-                myLink = await response.Content.ReadAsAsync<string[]>();
-
+                myArray = await response.Content.ReadAsAsync<string[]>();
+                myLink = myArray.First();
+                return myLink;
+            }else{
+                return "/imgs/bird.jpg";
             }
-            return myLink.First();
         }
     }
 }

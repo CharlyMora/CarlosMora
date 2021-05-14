@@ -32,8 +32,15 @@ namespace CarlosMora.Controllers
         }
         public async Task<ActionResult> Index()
         {
-            var myRepos = await ApiServices.ProcessRepositories2();
-            return View(myRepos);
+            var myFox = await ApiServices.FoxApi();
+            // var foxLink = myFox.image;
+            // if (!foxLink.StartsWith("http"))
+            // {   
+            //     ViewBag.foxtext= "no link for this one";
+            // }else{
+            //     ViewBag.foxtext = foxLink;
+            // }
+            return View(myFox);
         }
 
         public IActionResult Entries(string id)
