@@ -1,14 +1,22 @@
 ﻿body{
   justify-content: center;
+  text-align: center;
 }
 .blogEntrie{
   margin-left: auto;
   margin-right: auto;
-  text-align: left;
+  text-align: center;
   width: 60vw;
   /* background-color:red; */
 }
 
 h2{
   margin-top: 3rem;
+}
+
+.phrase{
+  margin: 2rem;
+}
+p{
+  margin: 1.5rem;
 }
