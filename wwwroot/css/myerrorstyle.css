@@ -43,7 +43,8 @@
   place-items: center;
   height: 100vh;
 }
+
 .notFound {
-  height: auto;
   padding-bottom: 5rem;
+  transform: scale(0.9);
 }
