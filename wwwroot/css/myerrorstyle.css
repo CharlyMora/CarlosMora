@@ -33,10 +33,10 @@
   margin: 3mm;
 
   /* position: fixed; */
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+  top: 0mm;
+  bottom: 0mm;
+  left: 0mm;
+  right: 0mm;
 }
 .container {
   display: grid;
@@ -46,7 +46,7 @@
 
 .notFound {
   padding-bottom: 5rem;
-  /* transform: scale(0.7); */
+  transform: scale(0.7);
 
 }
 
