@@ -30,9 +30,9 @@
     rgba(72, 62, 244, 1) 100%
   ); */
 
-  margin-bottom: 0;
+  margin: 0mm;
 
-  position: fixed;
+  /* position: fixed; */
   top: 0px;
   bottom: 0px;
   left: 0px;
@@ -46,5 +46,10 @@
 
 .notFound {
   padding-bottom: 5rem;
-  transform: scale(0.7);
+  /* transform: scale(0.7); */
+
+}
+
+img{
+  width: 610px;
 }
